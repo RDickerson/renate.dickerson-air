@@ -1,0 +1,41 @@
+body {
+    background: url(paper.jpg);
+}
+
+header {
+    text-align: center
+}
+
+article {
+    border: 5px outset black;
+    text-align: left;
+    margin: 5px;
+    color: green;
+}
+
+#blurb {
+    float: left;
+    padding: 5px;
+    margin-top: 2px;
+    text-transform: capitalize;
+    color: black;
+}
+
+ul {
+    list-style-type:none;
+    text-align: center;
+    font-size: 20px;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+a { 
+    color: brown;
+}
+
+a:hover {
+    text-decoration: underline;
+}
