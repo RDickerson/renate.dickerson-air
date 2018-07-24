@@ -37,27 +37,77 @@
 
 //Silver
 
-var peopleArray = [  
-    {
-      name: "Harrison Ford",
-      occupation: "Actor"
-    },
-    {
-      name: "Justin Bieber",
-      occupation: "Singer"
-    },
-    {
-      name: "Vladimir Putin",
-      occupation: "Politician"
-    },
-    {
-      name: "Oprah",
-      occupation: "Entertainer"
-    }
-  ]
-
-console.log(peopleArray.object.keys() );
+// var peopleArray = [  
+//     {
+//       name: "Harrison Ford",
+//       occupation: "Actor"
+//     },
+//     {
+//       name: "Justin Bieber",
+//       occupation: "Singer"
+//     },
+//     {
+//       name: "Vladimir Putin",
+//       occupation: "Politician"
+//     },
+//     {
+//       name: "Oprah",
+//       occupation: "Entertainer"
+//     }
+//   ]
 
 //   for( var i = 0; i < peopleArray.length; i++ ) {
-//       console.log( peopleArray )
+//       console.log( peopleArray[i].name )
 //   }
+
+// var namesArray = []
+// var occArray = []
+
+// for ( var i = 0; i < peopleArray.length; i ++ ) {
+//     namesArray.push( peopleArray[i].name )
+//     occArray.push( peopleArray[i].occupation )
+// }
+// console.log(namesArray)
+// console.log(occArray)
+
+// for ( var i = 0; i < peopleArray.length; i += 2 ) {
+//         namesArray.push( peopleArray[i].name )
+//         occArray.push( peopleArray[i + 1].occupation )
+//     }
+// console.log(namesArray)
+// console.log(occArray)
+
+//Gold
+//1.
+
+// var arrZero = []
+
+// for ( var i = 0; i < 1; i++ ) {
+//     arrZero.push([ i, i, i ],)
+// }
+// console.log(arrZero)
+
+// var arrZOT = []
+
+// for ( var i = 0; i < 3; i++ ) {
+//     arrZOT.push([ i, i, i ])
+// }
+// console.log(arrZOT)
+
+// var arrTogether = []
+
+// for ( var i = 0; i < 1; i++ ) {
+//     arrTogether.push([ i, i + 1, i + 2 ])
+// }
+// console.log(arrTogether)
+
+
+var array = [];
+for (var i = 0; i < 3; i++) {
+  var temp = [];
+  for (var j = 0; j < 3; j++) {
+    temp.push(0);
+  }
+  array.push(temp);
+}
+console.log(array)

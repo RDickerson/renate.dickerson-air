@@ -1,0 +1,239 @@
+body {
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.flag {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 10px;
+    font-size: 0;
+    border: 2px solid black;
+}
+
+/* France Flag */
+
+#france-blue {
+    display: inline-block;
+    width: 33.33%;
+    height: 100%;
+    background-color: blue;
+}    
+
+#france-white {
+    display: inline-block;
+    width: 33.33%;
+    height: 100%;
+    background-color: white;
+    
+}
+
+#france-red {
+    display: inline-block;
+    width: 33.33%;
+    height: 100%;
+    background-color: red;
+    
+}
+
+
+/* Germany Flag */
+
+#germany-black {
+    width: 100%;
+    height: 33.33%;
+    background-color: black;
+}
+
+#germany-red {
+    width: 100%;
+    height: 33.33%;
+    background-color: red;
+}
+
+#germany-gold {
+    width: 100%;
+    height: 33.33%;
+    background-color: gold;
+}
+
+/* Madagascar Flag */
+
+#mad-white {
+    display: inline-block;
+    width: 33.33%;
+    height: 100%;
+    background-color: white;
+}
+
+#mad-red {
+    position: relative;
+    left: 33.33%;
+    bottom: 100%;
+    width: 66.66%;
+    height: 50%;
+    background-color: red;
+}
+
+#mad-green {
+    position: relative;
+    bottom: 100%;
+    left: 33.33%;
+    width: 66.66%;
+    height: 50%;
+    background-color: green;
+}
+
+/* Switzerland Flag */
+
+#swis-red {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+#swis-white {
+    position: relative;
+    bottom: 180px;
+    left: 160px;
+    width: 180px;
+    height: 60px;
+    background-color: white;
+}
+
+#swis-white-tall {
+    position: relative;
+    bottom: 300px;
+    left: 220px;
+    width: 60px;
+    height: 180px;
+    background-color: white;
+}
+
+/* Sweden Flag */
+
+#sweden-yellow {
+    position: relative;
+    top: 125px;
+    width: 500px;
+    height: 62.5px;
+    background-color: yellow;
+}
+
+#sweden-yellow-tall {
+    position: relative;
+    bottom: 62.5px;
+    left: 156.25px;
+    width: 62.5px;
+    height: 300px;
+    background-color: yellow;
+}
+
+#sweden-blue {
+    position: relative;
+    z-index: -1;
+    bottom: 362.5px;
+    width: 500px;
+    height: 300px;
+    background-color: blue;
+}
+
+/* Gambia Flag */
+
+
+#gambia-red {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    background-color: red;
+}
+#gambia-white-top {
+    position: relative;
+    width: 500px;
+    height: 15px;
+    background-color: white;
+}
+
+#gambia-blue {
+    position: relative;
+    width: 500px;
+    height: 70px;
+    background-color: blue;
+}
+
+#gambia-white-bottom {
+    position: relative;
+    width: 500px;
+    height: 15px;
+    background-color: white;
+}
+
+#gambia-green {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    background-color: green;
+}
+
+/* Tonga Flag */
+
+#tonga {
+    width: 500px;
+    height: 250px;
+}
+
+#tonga-white {
+    width: 200px;
+    height: 125px;
+    background-color: white;
+}
+
+#tonga-red-vert {
+    position: relative;
+    top: 47.5px;
+    left: 57.5px;
+    width: 85px;
+    height: 30px;
+    background-color: red;
+}
+
+#tonga-red-horz {
+    position: relative;
+    bottom: 10px;
+    left: 85px;
+    width: 30px;
+    height: 85px;
+    background-color: red;
+}
+
+#tonga-red {
+    position: relative;
+    z-index: -1;
+    bottom: 125px;
+    left: ;
+    width: 500px;
+    height: 250px;
+    background-color: red;
+}
+
+/* Japan Flag */
+
+#japan-white {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+}
+
+#japan-red {
+    position: relative;
+    bottom: 250px;
+    left: 150px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+
+
+
+
