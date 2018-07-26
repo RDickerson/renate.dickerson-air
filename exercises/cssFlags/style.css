@@ -1,13 +1,26 @@
 body {
+    margin: 26px;
     background-color: rgba(0, 0, 0, 0.199);
+}
+
+span {
+    position: relative;
+    left: 100px;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    font-size: 26px;
+    border: 2px solid black;
+    padding: 20px;
+
 }
 
 .flag {
     width: 500px;
     height: 300px;
-    margin-bottom: 10px;
     font-size: 0;
     border: 2px solid black;
+    margin: 26px 0px 26px 0px;
 }
 
 /* France Flag */
@@ -146,6 +159,7 @@ body {
     height: 100px;
     background-color: red;
 }
+
 #gambia-white-top {
     position: relative;
     width: 500px;
@@ -209,7 +223,6 @@ body {
     position: relative;
     z-index: -1;
     bottom: 125px;
-    left: ;
     width: 500px;
     height: 250px;
     background-color: red;
@@ -233,7 +246,66 @@ body {
     background-color: red;
 }
 
+/* Greece Flag */
 
+#greece-corner {
+    width: 166.65px;
+    height: 166.65px;
+    background-color: blue;
+}
+
+#greece-white-vert {
+    position: relative;
+    left: 66.66px;
+    width: 33.33px;
+    height: 166.65px;
+    background-color: white;
+}
+
+#greece-white-horz {
+    position: relative;
+    bottom: 99.99px;
+    width: 166.65px;
+    height: 33.33px;
+    background-color: white;
+}
+
+#greece-background {
+    position: relative;
+    bottom: 166.65px;
+    z-index: -1;
+    width: 500px;
+    height: 300px;
+    background-color: blue;
+}
+
+#greece-white-1 {
+    position: relative;
+    top: 33.33px;
+    height: 33.33px;
+    background-color: white;
+}
+
+#greece-white-2 {
+    position: relative;
+    top: 66.66px;
+    height: 33.33px;
+    background-color: white;
+}
+
+#greece-white-3 {
+    position: relative;
+    top: 99.99px;
+    height: 33.33px;
+    background-color: white;
+}
+
+#greece-white-4 {
+    position: relative;
+    top: 133.32px;
+    height: 33.33px;
+    background-color: white;
+}
 
 
 
