@@ -1,0 +1,26 @@
+.price {
+    display: inline-block;
+    border: 3px dashed darkblue;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+.price h3 {
+    color: darkgreen;
+    font-size: 45px;
+    margin: 0px;
+    padding: 5px;
+
+}
+
+.price p {
+    color: darkolivegreen;
+    font-size: 26px;
+    margin: 0px;
+    padding: 1.5px;
+}
+
+.price span {
+    color: yellow;
+}
