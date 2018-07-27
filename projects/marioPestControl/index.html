@@ -11,48 +11,77 @@
 
 </head>
 <body>
-    <h1>Mario's Pest Control</h1>
+    
+    <header>
+        <h1>Mario's Pest Control</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quote.html">Your Quote</a>
+        </nav>
+    </header>
 
     <main class="price">
-        <h3>Pricing:</h3>
-        <p>Goombas: <span>5</span> Coins</p>
-        <p>Bob-ombs: <span>7</span> Coins</p>
-        <p>Cheep-cheeps: <span>11</span> Coins</p>
+        <h2><span>Pricing:</span>
+            <p>Goombas: <span>5</span> Coins</p>
+            <p>Bob-ombs: <span>7</span> Coins</p>
+            <p>Cheep-cheeps: <span>11</span> Coins</p>
+            <a href="quote.html"><span>Get your quote here!</span></a>
+        </h2>
+        
     </main>
 
-    <section id="project" ><span>Current Projects:¡`</span>
-        <section id="peach">
-            <h5 class="projects">Princess Peach's Castle</h5>
-            <p>Goombas: <input type="number" value="" name="pGoo"></input></p>
-            <p>Bob-ombs: <input type="number" value="" name="pBomb"></input></p>
-            <p>Cheep-cheeps: <input type="number" value="" name="pChee"></input></p>
-        </section>
-
-        <section id="luigi">
-            <h5 class="projects">Luigi's Mansion</h5>
-            <p>Goombas: <input type="number" value="" name="lGoo"></input></p>
-            <p>Bob-ombs: <input type="number" value="" name="lBomb"></input></p>
-            <p>Cheep-cheeps: <input type="number" value="" name="lChee"></input></p>
-        </section>
-
-        <section id="yoshi">
-            <h5 class="projects">Yoshi's Island</h5>
-            <p>Goombas: <input type="number" value="" name="yGoo"></input></p>
-            <p>Bob-ombs: <input type="number" value="" name="yBomb"></input></p>
-            <p>Cheep-cheeps: <input type="number" value="" name="yChee"></input></p>
-        </section>
+    <section id="project" ><span>Current Projects:</span>
+        <article id="peach">
+            <h5>Princess Peach's Castle</h5>
+            <form name="peachCal" class="form">
+                <div>
+                    <h3>Eliminated:</h3>  
+                    <p>Goombas: <input type="number" name="goom" value="30"/></p>
+                    <p>Bob-ombs: <input type="number" name="bob" value="12"/></p>
+                    <p>Cheep-cheeps: <input type="number" name="cheep" value="9"/></p>
+                    <button id="peachTotal">Total: 333 Coins</button>
+                </div>
+                <img src="rsz_goomba.png"/>
+            </form>
+        </article>
+        
+        <article id="luigi">
+            <h5>Luigi's Mansion</h5>
+            <form name="luigiCal" class="form">
+                <div>
+                    <h3>Eliminated:</h3>  
+                    <p>Goombas: <input type="number" name="goom" value="19"/></p>
+                    <p>Bob-ombs: <input type="number" name="bob" value="3"/></p>
+                    <p>Cheep-cheeps: <input type="number" name="cheep" value="8"/></p>
+                    <button id="luigiTotal">Total: 204 Coins</button>
+                </div>
+                <img src="rsz_bob-omb.jpg"/>
+            </form>
+        </article>
+        
+        <article id="yoshi">
+            <h5>Yoshi's Island</h5>
+            <form name="yoshiCal" class="form">
+                <div>
+                    <h3>Eliminated:</h3>  
+                    <p>Goombas: <input type="number" name="goom" value="7"/></p>
+                    <p>Bob-ombs: <input type="number" name="bob" value="21"/></p>
+                    <p>Cheep-cheeps: <input type="number" name="cheep" value="9"/></p>
+                    <button id="yoshiTotal">Total: 281 Coins</button>
+                </div>
+                <img src="rsz_cheep_cheep.jpg"/>
+            </form>
+        </article>
     </section>
-    <nav>
-        <a href="quote.html"></a>Get your quote here!
-    </nav>
-    
-    <footer>
-        <p>Contact: 
-            <a href="mariosemail@mpc.com">Email: mariosemail@mpc.com</a>
+  
+    <footer class="intro">
+        <h2><span>Contact:</span>
+            <p>Email: mariosemail@mpc.com</p>
             <p>Phone: Marios-pest (627.407.7378)</p>
             <p>Address: 555 Mario Lane Marioville, Mario 55555</p>
-        </p>
+        </h2>
     </footer>
 
+    <script src="app.js"></script>
 </body>
 </html>

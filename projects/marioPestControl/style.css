@@ -1,37 +1,188 @@
 body {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url("mario.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-h1 {
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: red;
     font-size: 76px;
+    margin-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    border: 3px dotted darkblue;
+    border-radius: 20px;
+    background-color: lightblue;
+    padding: 10px;
+
+}
+
+header nav a {
     color: red;
 }
 
 .price {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.price h1 {
+    color: red;
+    font-size: 76px;
+    margin-bottom: 10px;
+}
+
+.price h2 {
+    color: darkgreen;
+    font-size: 40px;
+    margin: 0px;
     border: 3px dashed darkblue;
     padding: 10px;
-    background-color: lightblue;
+    background-color: darkcyan;
     border-radius: 20px;
 }
 
-.price h3 {
+.price h2 p {
     color: darkgreen;
-    font-size: 45px;
-    margin: 0px;
-    padding: 5px;
-
-}
-
-.price p {
-    color: darkolivegreen;
     font-size: 26px;
-    margin: 0px;
-    padding: 1.5px;
 }
 
 .price span {
     color: yellow;
 }
 
+.price a {
+    text-decoration: none;
+}
+
+.price a:hover {
+    text-decoration: underline;
+}
+
+#project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 3px dashed red;
+    background-color: darkcyan;
+    border-radius: 50px;
+    width: 650px;
+}
+
+#project span {
+    font-size: 30px;
+    color: darkgreen;
+}
+
+#project h5 {
+    margin: 10px 0px 10px 0px;
+    font-size: 26px;
+    color: red;
+}
+
+#project .form h3 {
+    margin: 0px;
+    font-size: 20px;
+    color: darkgreen;
+}
+
+#project .form p {
+    margin: 5px;
+    color: darkolivegreen;
+}
+
+#project .form button {
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 150px;
+    background-color: darkcyan;
+    color: yellow;
+}
+
+#project .form input {
+    font-size: 18px;
+    text-align: center;
+    height: 22px;
+    width: 40px;
+    background-color: darkcyan;
+    color: yellow;
+}
+
+#project .form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#project .form img {
+    size: 300px 250px;
+}
+
+#peach {
+    border: 3px dashed darkblue;
+    width: 600px;
+    background-color: lightblue;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#luigi {
+    border: 3px dashed darkblue;
+    width: 600px;
+    background-color: lightblue;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#yoshi {
+    border: 3px dashed darkblue;
+    width: 600px;
+    background-color: lightblue;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    color: darkgreen;
+    font-size: 30px;
+    margin: 0px;
+    border: 3px dashed darkblue;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+.intro h2 p {
+    color: darkolivegreen;
+    font-size: 16px;
+}

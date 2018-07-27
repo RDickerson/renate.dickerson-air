@@ -1,7 +1,20 @@
+body {
+    text-align: center;
+    background-image: url("badGuy.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 45px;
+    color: red;
+    margin: 10px 0px 10px 0px;
+}
+
 .price {
     display: inline-block;
     border: 3px dashed darkblue;
-    padding: 10px;
+    padding: 5px;
     background-color: lightblue;
     border-radius: 20px;
 }
@@ -23,4 +36,84 @@
 
 .price span {
     color: yellow;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    margin-bottom: 20px;
+    width: 300px;
+    border: 3px dashed darkblue;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+.form h3 {
+    color: darkgreen;
+    font-size: 45px;
+    margin: 0px;
+    padding: 5px;
+
+}
+
+.form p {
+    color: darkolivegreen;
+    font-size: 26px;
+    margin: 0px;
+    padding: 1.5px;
+}
+
+.form input {
+    font-size: 18px;
+    text-align: center;
+    height: 22px;
+    width: 50px;
+    background-color: darkcyan;
+    color: yellow;
+}
+
+.form button {
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 150px;
+    background-color: darkcyan;
+    color: yellow;
+}
+
+.form button:hover {
+    border-color: darkcyan;
+    background-color: darkgoldenrod;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    width: 200px;
+    border: 3px dashed darkblue;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+nav :nth-child(1) {
+    background-color: lightblue;
+    padding: 5px;
+    color: red;
+    font-size: 19px;
+}
+
+nav :nth-child(2) {
+    background-color: lightblue;
+    padding: 5px;
+    color: red;
+    font-size: 19px;
 }
