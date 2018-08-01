@@ -1,0 +1,46 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(mario256.ttf);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: myFirstFont;
+}
+
+.heading {
+    background-color: yellow;
+    padding-left: 10px;
+    color: red;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.words {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+    text-align: center;
+}
+
+.words p {
+    width: 300px;
+}
+
+.footing {
+    display: flex;
+    justify-content: flex-end;
+    background-color: yellow;
+}
+
+.footing img {
+    height: 68px;
+    padding: 4px;
+}

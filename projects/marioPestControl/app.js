@@ -12,3 +12,7 @@ document.yoshiCal.addEventListener("submit", function(e){
     e.preventDefault();
     document.getElementById("yoshiTotal").innerHTML = `Total ${Number(document.yoshiCal.goom.value * 5) + Number(document.yoshiCal.bob.value * 7) + Number(document.yoshiCal.cheep.value * 11)} Coins`;
 });
+
+
+
+

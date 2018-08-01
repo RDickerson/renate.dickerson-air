@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: darkkhaki;
+}
+
+h1 {
+    font-size: 78px;
+    color: purple;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkgreen;
+    border: 7px dashed black;
+    width: 150px;
+    padding: 10px;
+    margin: 0px 20px;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+    text-emphasis: bold;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: slateblue;
+}
+
+main {
+    background-color: darkgrey;
+    border-radius: 50px;
+    width: 500px;
+    padding: 15px;
+}
+
+main h3 {
+    color: darkgreen;
+}
+
+main img {
+    margin-top: 20px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgray;
+    border-radius: 50px;
+    width: 500px;
+    padding: 15px;
+}
+
+article h3 {
+    color: darkgreen;
+    margin: 10px;
+}
+
+article h4 {
+    text-align: center;
+    margin: 8px;
+    margin-bottom: 10px;
+    color: green;
+}
+
+article input {
+    text-align: center;
+    font-size: 20px;
+    color: purple;
+    margin: 5px;
+    height: 20px;
+    width: 250px;
+}
+
+article button {
+    padding: 10px;
+    background-color: gray;
+    color: purple;
+    font-size: 20px;
+}
+
+#contact {
+    text-align: left;
+    border: 1px dashed darkkhaki;
+    width: 388px;
+    padding: 5px;
+}
+
+#contact span {
+    color: darkgreen;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 49px;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    section {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    
+    main {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin-bottom: 10px;
+    }
+
+    main {
+        width: 290px;
+    }
+
+    article {
+        width: 290px;
+        margin-bottom: 10px;
+    }
+
+    #contact {
+        font-size: 16px;
+        border: none;
+        width: 285px;
+        padding: 0px;
+        margin: 0px;
+    }
+}
