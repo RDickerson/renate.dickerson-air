@@ -1,5 +1,7 @@
+"use strict"
+
 function antiCaps (str) {
-    newStr = "";
+    var newStr = "";
     for (var i = 0; i < str.length; i++) {
         if (str[i] === str[i].toUpperCase()) {
             newStr += str[i].toLowerCase();
@@ -7,9 +9,10 @@ function antiCaps (str) {
             newStr += str[i].toUpperCase();
         }
     }
-    return newStr;
+    console.log(newStr);
 }
 
-console.log(antiCaps("Hello"));
-console.log(antiCaps("racEcar"));
-console.log(antiCaps("bAnAnA"));
+antiCaps("Hello");
+antiCaps("racEcar");
+antiCaps("bAnAnA");
+antiCaps("IhateCAPS")

@@ -1,0 +1,1 @@
+The exercises folder contains all of the excercises assigned at V School.

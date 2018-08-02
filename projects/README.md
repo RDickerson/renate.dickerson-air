@@ -1,0 +1,1 @@
+The projects folder contains all of the projects assigned at V School.
