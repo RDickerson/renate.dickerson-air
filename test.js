@@ -1,40 +1,22 @@
-// for (   where to start  ;  what to check for if it should go again   ;  how to move from start befor checking    ) {
-//     line of command (What should it do) "code"
-// }
+var dogs = [
+    { name: 'Fluffy', isFluffy: true },
+    { name: 'Fido', isFluffy: true },
+    { name: 'Scooby', isFluffy: true },
+    { name: 'Ralph', isFluffy: false },
+  ]
+  
+  // Only return the fluffy ones:
 
+  var onlyFluffy = dogs.filter(function(dog){
+      if (dog.isFluffy) {
+          return dog;
+      }
+  })
 
-// while (  what do i check to see if i should do it again   ) {
-//     what to do while the check returns true (what it should do) "code"
-// }
+  console.log(onlyFluffy);
 
-var pig = ["pink", "dirty", "smart", "going to slaughter"];
+  var dogNames = dogs.map(function(dog){
+    return dog.name;
+  });
 
-for (var i = 0; i < pig.length; i++) {
-    if (pig[i] === "dirty") {
-        console.log("Wash before going to slaughter");
-    } else if (pig[i] === "smart") {
-        console.log("keep at the farm");
-    } else if (pig[i] === "pink") {
-        console.log("take it to slaughter");
-    } else {
-        console.log("load the truck");
-        pig = "pink";
-    }
-}
-
-while (pig === "going to slaughter") {
-    for (var i = 0; i < pig.length; i++) {
-        if (pig[i] === "dirty") {
-            console.log("Wash before going to slaughter");
-        } else if (pig[i] === "smart") {
-            console.log("keep at the farm");
-        } else if (pig[i] === "pink") {
-            console.log("take it to slaughter");
-        } else {
-            console.log("load the truck");
-            pig = "pink";
-        }
-    }
-}
-
-// console.log(pig);
+  console.log(dogNames);
