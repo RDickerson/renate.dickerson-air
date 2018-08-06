@@ -6,12 +6,11 @@ var name = readlineSync.question("Adventurer, what is your name? ");
 console.log(`Welcome to Jiumron! We need your help, ${name}. We recently have become plagued by many creatures. All our vilargers that live on the outskrts of town have moved into town for protection. Will you reclame our farm lands?`);
 
 //Player Info
-
+var isAlive = true
 var adventurer = {
     Name: name,
     Level: 1,
     hitPoints: 25,
-    isAlive: true,
     attackUpTo: 3
 };
 
@@ -25,13 +24,13 @@ function EasyEnemyCreator(name, hitPoints, baseAttack){
 
 function MedEnemyCreator(name, hitPoints, baseAttack){
     this.name = name;
-    this.health = hitPoints + 5;
+    this.health = hitPoints + 2;
     this.baseAttack = baseAttack + 2;
 }
 
 function HardEnemyCreator(name, hitPoints, baseAttack){
     this.name = name;
-    this.health = hitPoints + 10;
+    this.health = hitPoints + 5;
     this.baseAttack = baseAttack + 4;
 }
 
@@ -69,13 +68,14 @@ function battle() {
             }
             if (adventurer.hitPoints <= 0) {
                 console.log(`${name}, you have been vanquished! Game Over`);
-                adventurer.isAlive = false;
+                isAlive = false;
             } else if (enemy.health <= 0) {
                 var bonusHealth = Math.floor(Math.random() * 5) + 1;
-                console.log(`The enemy had died! Here is your loot: \nPlus ${bonusHealth} health, \nPlus 25% level`);
+                var bonusAttack = Math.floor(Math.random() * 2) + 1;
+                console.log(`The enemy had died! Here is your loot: \nPlus ${bonusHealth} health, \nPlus 25% level and \n${bonusAttack} attack boost.`);
                 adventurer.Level += 0.25;
                 adventurer.hitPoints += bonusHealth;
-                adventurer.attackUpTo += 1;
+                adventurer.attackUpTo += bonusAttack;
             }
         } else if (battleOption[selected] === "run") {
             var escape = Math.random();
@@ -93,7 +93,7 @@ function battle() {
 
 function walkChance() {
     if (adventurer.Level === 4) {
-        Console.log(`${name}, you have won the Game! Congratulations`);
+        console.log(`${name}! Thank you for reclaming our farm lands. The creatures have been driven back! \nYou have won the Game! \nCongratulations`);
         isAlive = false;
     } else {
         var attakced = Math.random();
@@ -106,7 +106,7 @@ function walkChance() {
     }
 }
 
-while (adventurer.isAlive) {
+while (isAlive) {
     console.log("You have options:");
     var options = ["Explore", "View inventory", "quit"];
     var index = readlineSync.keyInSelect(options, `${name}, what would you like to do? `);
@@ -114,11 +114,8 @@ while (adventurer.isAlive) {
         walkChance();
     } else if (options[index] === "View inventory") {
         console.log(adventurer);
-    } else if (options[index] === "quit") {
-        adventurer.isAlive = false;
     } else {
         console.log(`${name}, you must help us. Please explore the farm lands and vanquish our enemies`);
     }
     
 }
-

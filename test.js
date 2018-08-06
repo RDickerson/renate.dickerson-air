@@ -1,22 +1,34 @@
-var dogs = [
-    { name: 'Fluffy', isFluffy: true },
-    { name: 'Fido', isFluffy: true },
-    { name: 'Scooby', isFluffy: true },
-    { name: 'Ralph', isFluffy: false },
-  ]
-  
-  // Only return the fluffy ones:
+//new file 
+// module.exports = {
+//     walk: walk
+// }
 
-  var onlyFluffy = dogs.filter(function(dog){
-      if (dog.isFluffy) {
-          return dog;
-      }
-  })
 
-  console.log(onlyFluffy);
+//orignal file 
+//var newFile = require('name of file')
+//to call: newFile.function()
 
-  var dogNames = dogs.map(function(dog){
-    return dog.name;
-  });
 
-  console.log(dogNames);
+  /////////
+  //order// 
+  /////////
+
+  /////////////
+  //variables//
+  /////////////
+
+  /////////////
+  //functions//
+  /////////////
+
+  ////////////////
+  //constructors//
+  ////////////////
+
+  /////////////
+  //game loop//
+  /////////////
+
+  //function should do one thing and do it well
+  //better to call functions inside of other functions.
+  //if its tasks can be broken out into smaller tasks make sure to seperate it out.
