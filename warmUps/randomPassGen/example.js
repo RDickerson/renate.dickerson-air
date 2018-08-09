@@ -1,22 +1,22 @@
 
-// function passwordGenerator (length) {
-//     var t = []
-//     for (var i = 0; i < length; i++) {
-//       t.push(Math.floor(Math.random() * (122- 33) + 33));
-//     }
-//     return String.fromCharCode(...t)
-//   }
+function passwordGenerator (length) {
+    var t = []
+    for (var i = 0; i < length; i++) {
+      t.push(Math.floor(Math.random() * (122- 33) + 33));
+    }
+    return String.fromCharCode(...t);
+  }
   
-//   console.log(passwordGenerator(5));
+  console.log(passwordGenerator(5));
 
 
-  // function passwordGenerator(n){
-  //   var password = ''
-  //   var options = 'aAbBcCdDeEfFgGhHjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890!@#$%^&*'
-  //   for(var i = 0; i < n; i++){
-  //     password += options[Math.floor(Math.random() * options.length)]
-  //   }
-  //   return password
-  // }
+  function passwordGenerator(n){
+    var password = '';
+    var options = 'aAbBcCdDeEfFgGhHjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890!@#$%^&*'
+    for(var i = 0; i < n; i++){
+      password += options[Math.floor(Math.random() * options.length)];
+    }
+    return password;
+  }
   
-  // console.log(passwordGenerator(10))
+  console.log(passwordGenerator(10))

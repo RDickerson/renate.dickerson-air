@@ -26,30 +26,40 @@ var people = [
 ];  
 
 
-// function sortedOfAge(arr){
-//     var oldEnough = people.filter(function(person){
-//         return person.age > 18;
-//     });
-//     console.log(oldEnough);
-// }
+function sortedOfAge(arr){
+    var oldEnough = people.filter(function(person){
+        return person.age > 18;
+    });
+    return (oldEnough);
+}
 
 // sortedOfAge(people);
 
-function toDisplayInHTML(arr){
-    var array = [];
-    var age = people.filter(function(person){
-        arr.push(person.age);
-    });
-    var ageSort = array.sort(function(){
-
-    })
-    
+function alphName (arr) {
+  var sorted = arr.sort(function(a, b){
+    return a.lastName > b.lastName;
+  });
+  return sorted;
 }
-    // var orderedList = people.sort(function(age){
-    //     console.log(age);
-    // });
-    
 
+// console.log(alphName(people));
 
-toDisplayInHTML(people)  //==> ["<li>Rick Sanchez is 78</li>", "<li>Sarah Palin is 47</li>", "<li>Kyle Mooney is 27</li>", "<li>Morty Smith is 13</li>", "<li>Frank Zappa is 12</li>"]
+function listItem(arr){
+  var ageSort = arr.sort(function(a, b){
+    return b.age - a.age;
+  });
+  var name = ageSort.map(function(person){
+    return `<li>${person.firstName} ${person.lastName} is ${person.age}</li>`;
+  });
+  return name;
+}
 
+// listItem(people);
+  
+
+module.exports = {
+  people: people,
+  sortedOfAge: sortedOfAge,
+  alphName: alphName,
+  listItem: listItem
+};

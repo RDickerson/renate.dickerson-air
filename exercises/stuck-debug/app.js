@@ -10,7 +10,7 @@ while (holder !== "fight bears") {
   } else if (options[holder] === "shoot guns") {
       console.log("You shoot guns.");
   } else if (options[holder] === "fight bears") {
-      option = "fight bears";
+      holder = "fight bears";
   } else {
     console.log("Please select an option.");
   }

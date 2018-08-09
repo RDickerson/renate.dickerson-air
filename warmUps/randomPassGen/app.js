@@ -12,7 +12,7 @@ function randomPass(howLong) {
     for (var i = 0; i < howLong; i++) {
         password += options[(Math.floor(Math.random() * options.length))];
     }
-    return password
+    return password;
 }
 
 console.log(randomPass(5));

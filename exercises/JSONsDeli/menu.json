@@ -1,0 +1,72 @@
+{
+    "appetizers": [
+        {
+            "name": "chips and salsa",
+            "ingredients": [
+                {
+                    "name": "corn chips",
+                    "ingredients": []
+                },
+                {
+                    "name": "salsa",
+                    "ingredients": ["tomatoes", "onions", "cilantro"]
+                }
+            ],
+            "discription": "refreshing"
+        },
+        {
+            "name": "Cheese Sticks",
+            "ingredients": ["glutin", "dairy", "maranara"],
+            "discription": "not healthy"
+        }
+
+    ],
+    "cold sandwiches": [
+        {
+            "name": "club",
+            "ingredients": ["ham", "beef", "turkey", "mayo"],
+            "discription": "heavy"
+        },
+        {
+            "name": "chicken",
+            "ingredients": ["chicken brest", "mayo", "olives"],
+            "discription": "tasty"
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name": "rubin",
+            "ingredients": ["corned beef", "thousand island dressing"],
+            "discription": "chefs favorite"
+        },
+        {
+            "name": "grilled cheese",
+            "ingredients": ["choice of bread", "choice of cheese", "mayo"],
+            "discription": "gooey"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "cookies",
+            "ingredients": ["chocolate", "oatmeal"],
+            "discription": "sweet"
+        },
+        {
+            "name": "sucker",
+            "ingredients": ["sugar", "flavering"],
+            "discription": "sucker"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Mt Dew",
+            "ingredients": ["sugar", "flavering"],
+            "discription": "yumm"
+        },
+        {
+            "name": "Diet Mt Dew",
+            "ingredients": ["sugar substitute", "flavering"],
+            "discription": "most yumm"
+        }
+    ]
+}
