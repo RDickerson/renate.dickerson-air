@@ -1,0 +1,10 @@
+* {
+    background-color: red;
+    text-align: center;
+}
+
+#pickMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

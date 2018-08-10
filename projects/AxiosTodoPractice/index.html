@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- this div holds all the already entered todo items -->
+    <div id="todoContainer"></div>
+    <!-- this button is what makes the form pop up so you can enter a new todo -->
+    <button id="getForm">New To Do</button>
+    <!-- this is the form that pops up I grab the values typed into it in js -->
+    <form id="newTodo" name="newTodo" class="hidden">
+        <input type="text" name="title" placeholder="title of todo"/>
+        <br>
+        <input type="text" name="description" placeholder="any extra discription"/>
+        <br>
+        <input type="number" name="price" placeholder="$ price if known"/>
+        <br>
+        <button id="posting">Post</button>
+    </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

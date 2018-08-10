@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#todoContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.todoItem {
+    background-color: darkgray;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: blueviolet;
+    padding: 5px;
+    text-align: center;
+    width: 300px;
+    margin: 10px;   
+}
+
+.todoItem h3 {
+    color: black;
+}
+
+.todoItem p:nth-child(3) {
+    color: green;
+}
+
+.todoItem button {
+    margin-bottom: 18.72px;
+    margin-left: 10px;
+}
+
+#getForm {
+    margin-top: 50px;
+    align-self: center;
+    background-color: gray;
+    border: 2px dotted blueviolet;
+    border-radius: 30px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    width: 150px;
+}
+
+.hidden {
+    display: none;
+}
+
