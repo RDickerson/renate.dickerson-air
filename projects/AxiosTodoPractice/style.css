@@ -14,14 +14,17 @@ body {
     background-color: darkgray;
     border: 2px solid black;
     border-radius: 20px;
+    font-size: 20px;
     color: blueviolet;
     padding: 5px;
     text-align: center;
-    width: 300px;
+    width: 275px;
+    height: 275px;
     margin: 10px;   
 }
 
 .todoItem h3 {
+    font-size: 35px;
     color: black;
 }
 
@@ -47,7 +50,10 @@ body {
     width: 150px;
 }
 
+#newTodo {
+    align-self: center;
+}
+
 .hidden {
     display: none;
 }
-

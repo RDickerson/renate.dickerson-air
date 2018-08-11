@@ -11,12 +11,13 @@ function view(res){
         var div = document.createElement("div");
         document.getElementById("todoContainer").appendChild(div);
         div.classList.add("todoItem");
+        div.setAttribute("id", "todoItem");
         div.innerHTML = `
                         <h3>${todo.title}</h3>
                         <p>${todo.description}</p>
                         <p>${todo.price}</p>
                         <img class="hidden" src=${todo.imgUrl}/>
-                        <button id="done" onclick="done()">Done</button>
+                        <button id="done" onclick="done('${todo.completed}', '${todo._id}')">Done</button>
                         <button onclick="deleteTodo('${todo._id}')">Delete</button>
                         `; 
     });
@@ -30,13 +31,14 @@ document.newTodo.addEventListener("submit", function(e){
     newPost.title = newTodo.title.value;
     newPost.description = newTodo.description.value;
     newPost.price = newTodo.price.value;
-    axios.post("https://api.vschool.io/renatedickerson/todo", newPost).then(function(res){
-    console.log(res);
-    var button = document.getElementById("new");
+    var button = document.getElementById("getForm");
     var form = document.newTodo;
     button.classList.toggle("hidden");
     form.classList.toggle("hidden");
+    axios.post("https://api.vschool.io/renatedickerson/todo", newPost).then(function(res){
+    console.log(res);
     });
+    alert("Your todo has been added. Please refresh your page to see it.");
 });
 
 //user friendly disappear things when not needed
@@ -50,19 +52,31 @@ document.getElementById("getForm").addEventListener("click", function(){
 
 // add a check box to every todo item
 
-function done() {
-    var button = document.getElementById("done");
-    button.textContent === "Done" ? "Not Done" : "Done";
+function done(completed, id) {
+    var img = document.getElementById("todoItem");
+    var isDone = {
+        completed: true
+    };
+    if (completed !== true) {
+        axios.put(`https://api.vschool.io/renatedickerson/todo/${id}`, isDone).then(function(res){
+            console.log(res);
+        });
+        img.style.backgroundImage = "url'Image-of-X.png')";
+        img.style.backgroundSize = "300px 300px";
+        img.style.backgroundRepeat = "no-repete";
+    } else {
 
+    }
 }
 
-// when compleated strikethorugh the todo item
+// when completed strikethorugh the todo item
 
 // add the option to delete todo
 
 function deleteTodo(id) {
     console.log(id)
     axios.delete(`https://api.vschool.io/renatedickerson/todo/${id}`);
+    alert("This item has been deleted. Please refresh your page.");
 }
 
 
