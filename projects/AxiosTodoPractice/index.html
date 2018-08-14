@@ -11,17 +11,21 @@
     <!-- this div holds all the already entered todo items -->
     <div id="todoContainer"></div>
     <!-- this button is what makes the form pop up so you can enter a new todo -->
-    <button id="getForm">New To Do</button>
+    <nav>
+        <button id="getForm">New To Do</button>
+        <form id="newTodo" name="newTodo" class="hidden">
+            <input type="text" name="title" placeholder="title of todo"/>
+            <br>
+            <input type="text" name="description" placeholder="any extra discription"/>
+            <br>
+            <input type="number" name="price" placeholder="$ price if known"/>
+            <br>
+            <input type="text" name="image" placeholder="image url"/>
+            <br>
+            <button id="posting">Add</button>
+        </form>
+    </nav>  
     <!-- this is the form that pops up I grab the values typed into it in js -->
-    <form id="newTodo" name="newTodo" class="hidden">
-        <input type="text" name="title" placeholder="title of todo"/>
-        <br>
-        <input type="text" name="description" placeholder="any extra discription"/>
-        <br>
-        <input type="number" name="price" placeholder="$ price if known"/>
-        <br>
-        <button id="posting">Post</button>
-    </form>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
 </body>

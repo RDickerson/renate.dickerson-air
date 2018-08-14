@@ -14,27 +14,29 @@ body {
     background-color: darkgray;
     border: 2px solid black;
     border-radius: 20px;
-    font-size: 20px;
-    color: blueviolet;
+    font-size: 25px;
     padding: 5px;
     text-align: center;
     width: 275px;
-    height: 275px;
+    height: 325px;
     margin: 10px;   
 }
 
-.todoItem h3 {
-    font-size: 35px;
+.todoItem p {
     color: black;
 }
-
-.todoItem p:nth-child(3) {
-    color: green;
+.todoItem input {
+    font-size: 20px;
 }
 
 .todoItem button {
     margin-bottom: 18.72px;
     margin-left: 10px;
+}
+
+nav {
+    position: fixed; 
+    top: 10px;
 }
 
 #getForm {
@@ -48,12 +50,45 @@ body {
     text-align: center;
     font-size: 16px;
     width: 150px;
+    opacity: 0.3;
+}
+
+#getForm:hover {
+    opacity: 1;
 }
 
 #newTodo {
+    margin-top: 50px;
     align-self: center;
+    background-color: gray;
+    border: 2px dotted blueviolet;
+    border-radius: 30px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    width: auto;
+}
+
+#newTodo input {
+    font-size: 26px;
+}
+
+#newTodo button {
+    margin: 5px;
+    font-size: 26px;
 }
 
 .hidden {
     display: none;
+}
+
+.todoItemImg {
+    background-image: url("Image-of-X.png");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    
+}
+
+.strike {
+    text-decoration: line-through;
 }
