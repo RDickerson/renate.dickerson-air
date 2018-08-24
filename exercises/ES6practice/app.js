@@ -50,7 +50,7 @@
 
 // console.log(vegetables);
 
-// // Re-write this .filter() using a fat arrow function:
+// Re-write this .filter() using a fat arrow function:
 
 // const people = [
 //     {
@@ -75,7 +75,7 @@
 // //     return !!person.friendly
 // // })
 
-// const friends = people.filter(person => !!person.friendly);
+// const friends = people.filter(person => !person.friendly);
 
 // console.log(friends);
 
@@ -108,34 +108,39 @@
 // console.log(person("Renate", "Dickerson", 29));
 // console.log(person());
 
-// Use the shorthand syntax to make the following code block take up one line.
+// // Use the shorthand syntax to make the following code block take up one line.
 
-// const dogs = animals.filter((animal)=>{
+
+
+// const animals = [
+//     {
+//         type: "dog",
+//         name: "woof"
+//     },
+//     {
+//         type: "cat",
+//         name: "meow"
+//     },
+//     {
+//         type: "pig",
+//         name: "oink"
+//     }
+// ];
+
+// const dogs = animals.filter(animal => animal.type === "dog" ? true : false);
+
+// console.log(dogs);
+
+// const doggys = animals.filter((animal)=>{
 //     if (animal.type === "dog"){
-//         return true
+//         return true;
 //       } else {
-//         return false
+//         return false;
 //       }
-//     })
+// })
 
-const animals = [
-    {
-        type: "dog",
-        name: "woof"
-    },
-    {
-        type: "cat",
-        name: "meow"
-    },
-    {
-        type: "pig",
-        name: "oink"
-    }
-];
+// console.log(doggys);
 
-const dogs = animals.filter(animal => animal.type === "dog" ? true : false);
-
-console.log(dogs);
 
 // //Template Literals Write a function that will take `location` and `name` and output this if `location="Hawaii"` and `name="Janice"`: ``` Hi Janice! Welcome to Hawaii. I hope you enjoy your stay. Please ask the president of Hawaii if you need anything.
 

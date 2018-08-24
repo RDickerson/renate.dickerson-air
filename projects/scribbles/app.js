@@ -1,2 +1,5 @@
-var stringgy = "Hi Renate";
-console.log(stringgy.split("").reverse().join(""));
+function name(params) {
+    return `My ${params} is awesome!`
+}
+
+console.log(name("Name"))

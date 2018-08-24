@@ -11,6 +11,7 @@ class Player {
     }
     gotHit() {
         if (this.hasStar){
+            console.log(`Your star protected you, say goodbye!`);
             this.hasStar = false;
         } else if (this.status === "Powered Up") {
             this.status = "Big";
@@ -41,8 +42,10 @@ class Player {
 
 const player1 = new Player("Me", 0, "Small");
 
-console.log(`haha ${this.name}, just kidding you have to be Luigi`);
+console.log(`haha ${player1.name}, just kidding you have to be Luigi`);
+
 player1.setName("Luigi");
+
 
 const start = setInterval(() => {
         let num = Math.floor(Math.random() * 3);
@@ -53,12 +56,12 @@ const start = setInterval(() => {
         } else if (num === 2) {
             player1.addCoin();
         }
-        player1.print();
         if(!player1.gameActive){
             clearInterval(start);
         }
+        player1.print();
     }
-, 1000);
+, 500);
 
 
 
