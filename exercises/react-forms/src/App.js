@@ -1,9 +1,9 @@
 import React from "react"
-import Names from "./Names"
+import Form from "./Form"
 
 const App = () => {
   return (
-    <Names />
+    <Form />
   )
 }
 

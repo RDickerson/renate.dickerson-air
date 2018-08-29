@@ -1,9 +1,9 @@
 import React from "react"
-import Names from "./Names"
+import LifeCycle from "./LifeCycle"
 
 const App = () => {
   return (
-    <Names />
+    <LifeCycle />
   )
 }
 
