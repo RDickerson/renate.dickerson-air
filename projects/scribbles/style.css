@@ -1,0 +1,141 @@
+@font-face{
+    font-family: 'verde';
+    src: url(./images&fonts/verdemoderna.woff)
+}
+
+  /* ///////////////////screens/////////// */
+  
+body{
+    font-family: 'Libre Baskerville';
+    text-align: left;
+    font-size: 46%;
+    margin: 0px;
+    line-height:2;
+}
+    
+p{
+    margin: 0px 35px ;
+}
+
+.header{
+    font-family: 'Luciano Vergara', sans-serif;
+    position: relative;
+    color:rgb(250,251,251);
+    font-family:'Julius Sans One';
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+    
+#nav{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 100%;
+    background-color: #e4f4c569;
+    opacity: 0.7;
+    filter:alpha (opacity=90);
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+#nav :nth-child(1), #nav :nth-child(3){
+    font-size: 10px;
+    font-family: 'verde', sans-serif;
+}
+
+#beauty{
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(165,184,185);
+}
+
+.daveShea{
+    color:rgb(165,184,185);
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bandwidth{
+    margin-bottom: 3px;
+}
+
+.footLink {
+    font-family: 'verde';
+    color: rgb(165,184,185);
+    margin:1px;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+}
+
+.footLink a {
+    padding: 10px;
+    font-size: 30px;
+}
+
+#sectionTitle, #authors, #resources{ /* tall skinny font */
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 12px;
+}
+
+    #author{
+        font-size: 17px;
+    }
+    .author{
+        font-family: 'verde';
+        font-style: italic;
+        color: rgb(165,184,185);
+    }
+
+#authorLinks {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    line-height: normal;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+@media (min-width: 1100px){
+  
+  body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 300px 2500px 300px;
+  }
+
+  .header{
+    grid-area: t;
+  }
+
+  .main{
+    grid-area: m;
+  }
+
+  #bottomMenue{
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #authorLinks{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .bottom{
+    grid-area: b;
+  }
+}
