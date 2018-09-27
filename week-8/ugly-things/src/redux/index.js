@@ -21,8 +21,10 @@ const reducer = (prevState = initState, action) => {
         case "ADD_UGLY":
             return {
                 img: prevState.img,
-                title: 
+                
             }
+        default:
+            return prevState
     }
 }
 
